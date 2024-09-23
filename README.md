@@ -6,6 +6,11 @@ docker push rekhugopal/eksistiodemo:latest
 
 # Docker Push
 
+# AWS EKS Commands (Service-Serv-ce-Communication)
+
+aws eks update-kubeconfig --name demo
+kubectl apply -f .
+
 # login to client pod 
 kubectl exec -it client -n backend  -- sh  
 
